@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link - NicholasX</title>
+    <link rel="icon" href="images/avator.jpg" type="image/x-icon">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #2b95b3 0%, #96d3d6 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            color: white;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding-top: 20px;
+        }
+
+        .profile {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .avatar {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        .name {
+            color: white;
+            font-size: 20px;
+            margin-bottom: 5px;
+        }
+
+        .bio {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .social-icon {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            transition: transform 0.2s;
+            position: relative;
+        }
+
+        .social-icon:hover {
+            transform: translateY(-2px);
+        }
+
+        .social-icon img {
+            width: 20px;
+            height: 20px;
+        }
+
+        .tooltip {
+            position: absolute;
+            bottom: -30px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            white-space: nowrap;
+            opacity: 0;
+            transition: opacity 0.2s;
+            pointer-events: none;
+        }
+
+        .social-icon:hover .tooltip {
+            opacity: 1;
+        }
+
+        .link-section {
+            margin-bottom: 20px;
+        }
+
+        .section-title {
+            color: white;
+            font-size: 14px;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            padding-left: 4px;
+        }
+
+        .link-card {
+            background: white;
+            border-radius: 12px;
+            padding: 15px;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: #333;
+            transition: transform 0.2s;
+        }
+
+        .link-card:hover {
+            transform: translateY(-2px);
+        }
+
+        .link-icon {
+            width: 24px;
+            height: 24px;
+            margin-right: 10px;
+            flex-shrink: 0;
+        }
+
+        .link-text {
+            flex: 1;
+            font-size: 14px;
+        }
+
+        .arrow {
+            width: 20px;
+            height: 20px;
+            opacity: 0.3;
+        }
+
+        .qr-container {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: white;
+            padding: 10px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .qr-code {
+            width: 100px;
+            height: 100px;
+        }
+
+        .qr-text {
+            font-size: 12px;
+            color: #666;
+            margin-top: 5px;
+        }
+
+        @media (max-width: 768px) {
+            .qr-container {
+                display: none;
+            }
+            
+            .container {
+                padding-top: 10px;
+            }
+
+            .link-card {
+                margin-bottom: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="profile">
+            <img src="images/avator.jpg" alt="NicholasX" class="avatar">
+            <h1 class="name">NicholasX</h1>
+            <p class="bio">分享知识，共同成长！期待与君共进！</p>
+            <div class="social-links">
+                <a href="mailto:mayang678678@gmail.com" class="social-icon">
+                    <img src="images/gmail.png" alt="Gmail">
+                    <span class="tooltip">mayang678678@gmail.com</span>
+                </a>
+                <a href="#" class="social-icon" onclick="alert('WeChat: nicholasx2025')">
+                    <img src="images/wechat.png" alt="WeChat">
+                    <span class="tooltip">nicholasx2025</span>
+                </a>
+                <a href="tencent://message/?uin=926383797" class="social-icon">
+                    <img src="images/QQ.png" alt="QQ">
+                    <span class="tooltip">926383797</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="link-section">
+            <div class="section-title">★ 置顶</div>
+            <a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=Mzg2NTg4ODkwNA==&scene=124#wechat_redirect" target="_blank" class="link-card">
+                <img src="images/Knowledge.png" alt="WeChat" class="link-icon">
+                <span class="link-text">知识付费共建社群【打破信息差】</span>
+                <span class="arrow">›</span>
+            </a>
+        </div>
+
+        <div class="link-section">
+            <a href="https://nicholasx.me/%E6%9C%9F%E6%9C%AB%E8%B5%84%E6%96%99" target="_blank" class="link-card">
+                <img src="images/usc.png" alt="USC" class="link-icon">
+                <span class="link-text">USC期末资源</span>
+                <span class="arrow">›</span>
+            </a>
+            <a href="https://nicholasx.me/" target="_blank" class="link-card">
+                <img src="images/blog.png" alt="Blog" class="link-icon">
+                <span class="link-text">个人博客</span>
+                <span class="arrow">›</span>
+            </a>
+            <a href="https://uscvip.me/" target="_blank" class="link-card">
+                <img src="images/NAV.png" alt="Navigation" class="link-icon">
+                <span class="link-text">个人导航</span>
+                <span class="arrow">›</span>
+            </a>
+        </div>
+
+        <div class="link-section">
+            <div class="section-title">🏠 学习资源</div>
+            <a href="https://pan.quark.cn/s/ccf739ace43e" target="_blank" class="link-card">
+                <img src="images/kaoyan.png" alt="考研" class="link-icon">
+                <span class="link-text">考研</span>
+                <span class="arrow">›</span>
+            </a>
+            <a href="https://pan.quark.cn/s/8ec3adea7d49" target="_blank" class="link-card">
+                <img src="images/gongwuyuan.png" alt="考公考编" class="link-icon">
+                <span class="link-text">考公考编</span>
+                <span class="arrow">›</span>
+            </a>
+            <a href="https://pan.quark.cn/s/233f70fe1187" target="_blank" class="link-card">
+                <img src="images/gaozhong.png" alt="高中网课" class="link-icon">
+                <span class="link-text">高中网课合集</span>
+                <span class="arrow">›</span>
+            </a>
+            <a href="https://pan.quark.cn/s/28454f2f0564" target="_blank" class="link-card">
+                <img src="images/kecheng.png" alt="付费课程" class="link-icon">
+                <span class="link-text">付费课程</span>
+                <span class="arrow">›</span>
+            </a>
+            <a href="https://pan.quark.cn/s/b6371c454ca8" target="_blank" class="link-card">
+                <img src="images/zhishixingqiu.png" alt="生财有术" class="link-icon">
+                <span class="link-text">生财有术</span>
+                <span class="arrow">›</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- <div class="qr-container">
+        <img src="/api/placeholder/100/100" alt="QR Code" class="qr-code">
+        <p class="qr-text">扫一扫<br>在手机上打开</p>
+    </div> -->
+</body>
+</html>
